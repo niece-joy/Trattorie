@@ -339,8 +339,9 @@ p {
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding:50px 0;
+	padding: 50px 50px;
 	font-family:'Poppins', sans-serif}
+
 .testimonials .title {
 	text-align: center;
 	margin-top: 50px;
@@ -878,6 +879,7 @@ p {
 	#about .col-right a {
 		text-align: left;
 	}
+
 	/* End About */
 
 	/* contact  */
@@ -913,8 +915,47 @@ p {
 		padding-left: 20px;
 	}
 	/* End contact  */
+
+	.testimonials{
+		flex-direction: column;
+		padding: 100px 0px;
+		align-items: center;
+		justify-content: center;
+		max-width: fit-content;
+	}
 }
 /* End Media Query For Tablet */
+
+/*Media Query for Phones*/
+@media only screen and (max-width: 768px) {
+	.testimonials {	
+		height:950px;
+		padding: 20px 0;
+	}
+
+	.testimonials .container {
+		flex-direction: column;
+		padding: 10px 0px;
+		align-items: center;
+		justify-content: center;
+		max-width: fit-content;
+	}
+
+	.testimonials .title {
+		text-align: center;
+		margin-top: 50px;
+		position: relative;
+		padding: 10px 0;
+		max-width: 600px;
+		margin-top: 10px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.testimonials .owl-carousel owl-theme testi {
+		margin-bottom:20px
+	}
+}
+/*End Media Query for Phones*/
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 900px) {
